@@ -1,0 +1,54 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.words{
+    display: flex;
+}
+.active{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.products {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.product {
+    max-width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.image_container {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+.btn{
+    margin-bottom: 40px;
+
+}
+.tickettable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+@media screen and (max-width:1000px){
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
